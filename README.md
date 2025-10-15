@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project: Healthcare Insurance Cost Analysis
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
@@ -243,3 +244,6 @@ Special thanks to **Code Institute mentors and peers** for guidance and construc
 Appreciation is also extended to the **Kaggle** community for providing high-quality open datasets used in this analysis.
 
 ---
+=======
+# H1_Health_Analytics
+>>>>>>> a4ffbc969dfe178ff93204e3701ee7ac2117fb1c
