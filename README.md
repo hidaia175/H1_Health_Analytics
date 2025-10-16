@@ -98,7 +98,61 @@ This was solved by reloading the dataset and re-running previous steps with the 
 - **Purpose:** To visualize regional differences in average insurance charges.
 - **Insight:** The **southeast** region shows the highest average costs, while other regions remain relatively balanced.
 
----
+### 4️⃣ Interactive Scatter Plot (BMI vs Insurance Charges)
 
-These visualisations provided an initial understanding of how **age, lifestyle, and region** influence medical insurance costs.  
+To make the data visualisation more interactive and insightful, an **interactive scatter plot** was created using **Plotly Express**.  
+This visualisation allows users to explore how **Body Mass Index (BMI)** and **smoking habits** influence insurance charges.
+
+- **Tool used:** Plotly Express
+- **X-axis:** BMI
+- **Y-axis:** Insurance Charges
+- **Color:** Smoker status (Yes/No)
+- **Hover Data:** Age and Region
+- **Purpose:** To visualise the relationship between BMI and medical charges and highlight how smoking amplifies costs.
+
+**Insight:**  
+The scatter plot shows a clear upward trend — individuals with higher BMI values and smoking habits tend to have significantly higher insurance charges.  
+Users can hover over each data point to view details about the person’s age and region, making the visualisation both **interactive** and **informative**.
+
+**Code Example:**
+
+```python
+import plotly.express as px
+
+fig = px.scatter(
+    df,
+    x='bmi',
+    y='charges',
+    color='smoker',
+    title="BMI vs Insurance Charges (Interactive Scatter Plot)",
+    hover_data=['age', 'region']
+)
+fig.show()
+--
+
+These visualisations provided an in## ETL Pipeline Validation (Day 2)
+
+During Day 2, the ETL pipeline was tested to ensure that the dataset was accurate, consistent, and ready for analysis before creating advanced visualisations.
+
+### Steps Performed
+1. **Extract:**
+   The cleaned dataset `insurance_cleaned.csv` was supposed to be loaded from the `data/` folder.
+
+2. **Issue Encountered:**
+   At first, the data was not properly linked to the cleaned file, and the notebook could not find the dataset.
+   After testing different paths and getting support from ChatGPT, the problem was fixed by reloading the file correctly.
+
+3. **Transform:**
+   - Checked column names for consistency.
+   - Verified that there were no missing or duplicate records.
+   - Confirmed that all data types were correct.
+
+4. **Load:**
+   - The cleaned data was successfully reloaded and confirmed to be correct and ready for visualisation.
+
+### Reflection
+The small error during data loading helped improve understanding of how to manage file paths in Jupyter Notebook.
+After fixing it, the ETL process worked properly, and the dataset was validated and ready for further analysis.
+itial understanding of how **age, lifestyle, and region** influence medical insurance costs.
 They also confirmed that the dataset is clean, consistent, and ready for deeper predictive analysis in the following phases.
+```
