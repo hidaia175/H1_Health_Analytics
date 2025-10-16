@@ -152,7 +152,11 @@ Day 2 visualisations explored deeper relationships between demographic and lifes
 - Hover Data: Age, Region
 - Insight: Confirms BMI and smoking greatly increase costs.
 
+### 📊 Interactive Scatter Plot (BMI vs Charges)
+
 ### Reflection
+
+![BMI vs Charges Scatter Plot](images/scatter_plot_bmi_charges.jpg)
 
 - Challenge: Cleaned data was not loading correctly at first.
 - Solution: Verified ETL pipeline and reloaded data successfully with ChatGPT’s help.
