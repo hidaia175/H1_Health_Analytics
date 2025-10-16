@@ -63,3 +63,42 @@ No missing values were found in the dataset, but a few **data quality checks** w
 
 These steps improved the dataset’s structure and made it ready for further analysis and visualisation.  
 The cleaned version was saved as **`insurance_cleaned.csv`** inside the `data/` folder.
+
+## 📊 Data Visualisation (Day 1)
+
+Initial data visualisations were created using **Matplotlib**, **Seaborn**, and **Plotly** to explore the cleaned dataset and understand its structure.
+
+Before visualisation, the data was **cleaned and saved** into a new file named **`insurance_cleaned.csv`** in the `data/` folder.  
+This ensured that all graphs were generated from accurate and preprocessed data.
+
+During this process, a small issue occurred where the variable `df` was not recognized after restarting the Jupyter Notebook.  
+This was solved by reloading the dataset and re-running previous steps with the help of **ChatGPT**, which provided debugging guidance.
+
+---
+
+### 1️⃣ Age Distribution
+
+- **Tool used:** `Matplotlib`
+- **Purpose:** To display how ages are distributed among insured individuals.
+- **Insight:** Most policyholders fall between 20–50 years old, representing the main working-age population.
+
+---
+
+### 2️⃣ Charges by Smoking Status
+
+- **Tool used:** `Seaborn (Boxplot)`
+- **Purpose:** To compare insurance charges between smokers and non-smokers.
+- **Insight:** Smokers clearly pay higher insurance costs compared to non-smokers.
+
+---
+
+### 3️⃣ Average Charges by Region
+
+- **Tool used:** `Plotly (Interactive Bar Chart)`
+- **Purpose:** To visualize regional differences in average insurance charges.
+- **Insight:** The **southeast** region shows the highest average costs, while other regions remain relatively balanced.
+
+---
+
+These visualisations provided an initial understanding of how **age, lifestyle, and region** influence medical insurance costs.  
+They also confirmed that the dataset is clean, consistent, and ready for deeper predictive analysis in the following phases.
